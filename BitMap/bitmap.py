@@ -131,14 +131,14 @@ class BitMap:
             try:
                 assert tuple(sorted(set(x))) == tuple(BitMap().bitmap_sort(x))
             except AssertionError:
-                print sorted(x)
-                print BitMap().bitmap_sort(x)
+                print(sorted(x))
+                print(BitMap().bitmap_sort(x))
         for _ in range(100):
             try:
                 assert tuple(sorted(set(x))) == tuple(BitMap.sort(x))
             except AssertionError:
-                print sorted(x)
-                print BitMap.sort(x)
+                print(sorted(x))
+                print(BitMap.sort(x))
         print("it works")
         return True
 
