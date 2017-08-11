@@ -9,7 +9,8 @@
 ```python
 def binary_search(key,alist):
     alist = list(alist)  # 使用额外空间有几个好处，第一是不影响这个数据继续被其他线程使用，第二是不容易修改全局数据，第三是支持迭代器过来的流式数据
-    left, right = 0, len(alist)-1 # 入口判断，若有大量范围外导致的 search miss 应该考虑加上这句『敏捷失败』
+    left, right = 0, len(alist)-1 
+    # 入口判断，若有大量范围外导致的 search miss 应该考虑加上这句『敏捷失败』
     if key < alist[left] or key > alist[right]: return -1
     mid = None  # 注意mid在其他语言中可能需要保持全局，但是在python中其实是可以在while之后将mid穿透到下面去的，并没有销毁
     while left <= right:  # 注意保证相遇处。依赖于mit+1和mid-1的更新式
