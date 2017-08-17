@@ -1,4 +1,5 @@
 # coding=utf-8
+# 原理可参考我的博客 http://dogless.farbox.com/post/github/-tong-ji-xue-xi-fang-fa-za-ji
 from copy import deepcopy
 from random import sample
 
