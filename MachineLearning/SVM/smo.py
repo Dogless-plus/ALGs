@@ -1,4 +1,5 @@
 # coding=utf-8
+# 原理可参考我的博客 http://dogless.farbox.com/post/github/-tong-ji-xue-xi-fang-fa-za-ji
 # todo @dogless： 增加序列化和反序列化接口
 # todo @dogless:  添加更多核函数
 from copy import deepcopy
