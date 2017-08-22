@@ -1,5 +1,3 @@
-# coding=utf-8
-
 #coding=utf-8
 # 尝试一下可读性差和效率都差的代码
 
